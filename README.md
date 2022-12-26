@@ -36,7 +36,7 @@ cd SE1-TSE-OddWorld/Sources
 ./build-linux64.sh                  	# use build-linux32.sh for 32-bits
 ```
 After that , libraries will be collected in the x32 or x64 directory .   
-Copy them to SeriousSamClassic/SamTSE/Mods/OddWWorld/Bin folder.
+Copy them to SeriousSamClassic/SamTSE/Mods/OddWorld/Bin folder.
 
 ### Gentoo
 
@@ -65,7 +65,7 @@ cd SE1-TSE-OddWorld/Sources
 bash build-linux64.sh                	# use build-linux32.sh for 32-bits
 ```
 After that , libraries will be collected in the x32 or x64 directory .   
-Copy them to SeriousSamClassic/SamTSE/Mods/OddWWorld/Bin folder.
+Copy them to SeriousSamClassic/SamTSE/Mods/OddWorld/Bin folder.
 
 Windows
 -------
