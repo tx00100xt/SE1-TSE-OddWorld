@@ -23,7 +23,7 @@ Louva-Deus is author this mod for windows.
 Download [SamTSE-OddWorld.tar.xz] archive and unpack to  SeriousSamClassic/SamTSE/ directory.  
 To start the modification, use the game menu - item Modification.
 
-Building Serious Sam Classic Odd World modification (only for SS:TFE)
+Building Serious Sam Classic Odd World modification (only for SS:TSE)
 ---------------------------------------------------------------------
 
 ### Linux
