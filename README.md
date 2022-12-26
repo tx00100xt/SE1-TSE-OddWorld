@@ -31,7 +31,7 @@ Building Serious Sam Classic Odd World modification (only for SS:TFE)
 Type this in your terminal:
 
 ```
-git clone https://github.com/tx00100xt/SE1-TFE-OddWorld.git SE1-TSE-OddWorld
+git clone https://github.com/tx00100xt/SE1-TSE-OddWorld.git SE1-TSE-OddWorld
 cd SE1-TSE-OddWorld/Sources
 ./build-linux64.sh                  	# use build-linux32.sh for 32-bits
 ```
