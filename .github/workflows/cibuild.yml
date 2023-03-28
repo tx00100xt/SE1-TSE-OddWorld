@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build-ubuntu:
+    name: Ubuntu ${{ matrix.Configuration }} ${{ matrix.Platform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        Configuration: [Release]
+        Platform: [x64]
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Install x64 packages
+      if: ${{ matrix.Platform == 'x64' }}
+      run: |
+          sudo apt-get update -qq
+          sudo apt-get install -qq -y libsdl2-dev libogg-dev libvorbis-dev &&
+          sudo apt-get install -qq -y bison flex zlib1g-dev
+
+    - name: Run CMake x64
+      if: ${{ matrix.Platform == 'x64' }}
+      run: cmake -B build -DCMAKE_BUILD_TYPE=${{ matrix.Configuration }}
+
+    - name: Run CMake Build
+      id: cmake-build
+      run: |
+          make ecc
+          cmake --build build --config ${{ matrix.Configuration }} --parallel $(nproc || echo 4)    
