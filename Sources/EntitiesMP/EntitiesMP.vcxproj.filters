@@ -62,6 +62,9 @@
     <Filter Include="Messages">
       <UniqueIdentifier>{7a1dcaf7-0837-41e6-9e0c-6a85f796cc5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Class Files\Engine">
+      <UniqueIdentifier>{f00b76bd-85b8-4495-8f69-b78c3ca11e9d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common\Common.cpp">
@@ -2360,5 +2363,22 @@
     <CustomBuild Include="..\..\Flesh\Data\Messages\Enemies\Woman.txt">
       <Filter>Messages</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\Engine\Classes\PlayerEntity.es">
+      <Filter>Class Files\Engine</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Engine\Classes\BaseEvents.es">
+      <Filter>Class Files\Engine</Filter>
+    </None>
+    <None Include="..\Engine\Classes\MovableBrushEntity.es">
+      <Filter>Class Files\Engine</Filter>
+    </None>
+    <None Include="..\Engine\Classes\MovableEntity.es">
+      <Filter>Class Files\Engine</Filter>
+    </None>
+    <None Include="..\Engine\Classes\MovableModelEntity.es">
+      <Filter>Class Files\Engine</Filter>
+    </None>
   </ItemGroup>
 </Project>
